@@ -1,0 +1,34 @@
+As a <type of user> I should be able to <specific goal with an outcome>
+
+1. As a user I should be able to find a link for employees on all the pages, when clicked, I see a list of employees.
+
+  - create employees folder under components
+  - create a list.js
+  - create EmployeeList component inside list.js as a class component  
+      * constructor
+         - state - employees = []
+      * component did mount
+        - making api call and updating the state
+      * render
+        - list the state values in a table/list format
+ - provide link for employees in app.js
+ - import EmployeeList and specify the Route
+
+2. As a user I should be able to click on Add Employee Link from Employee List, when cicked, I see a form to add employee details like 
+   name, email, mobile, department
+
+ - create a New.js - maintain state here
+ - reer it in List.js
+ - create a Form.js and refer it in New.js
+
+3. As a user I should be able to see the list of departments in the Employee form, which I can choose while adding a new employee
+
+4. As a user, when I click on the submit button in the employee form, the form data needs to be sent to the server for DB insertion
+
+5. As a user, if the data is inserted successfully I want to be redirected the employee list page, incase there is server errors I want to see the errors above the form.
+
+6. As a user I must be able to click on the name of the employee and it must take me to the employee show page, where I get to see the name, email  and department the employee belongs to.
+
+7. As a user, when I am in the employee show page, I want a link called as back when clicked, it will bring me back to the employee list page.
+
+8. As a user, when i click on the customer, i want to see more information of the customer on the new page
